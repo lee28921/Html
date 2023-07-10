@@ -206,12 +206,12 @@ main {
 }
 #links > ul a {}
 #links > ul span {
-    display: block;
+    display: inline-block;
     width: 150px;
     height: 150px;
     border: 1px solid #ddd;
     border-radius: 150px; /* 모서리 깎기 - 기준은 가로세로 길이 */
-    margin: 26px auto;
+    margin: 26px;
 }
 #links > ul span.icon1 {background-image: url(../images/icon-1.jpg);}
 #links > ul span.icon2 {background-image: url(../images/icon-2.jpg);}
@@ -230,26 +230,66 @@ footer {
 
 #buttonMenu {
     display: inline-block;
-    width: 100%;
+    width: 600px;
     height: 20px;
-    border: 1px solid red;
-
 }
 #buttonMenu > ul {
     overflow: hidden;
-    border: 1px solid #00f;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 #buttonMenu > ul > li {
     float: left;
-    padding: 15px;
-    margin-top: 20px;
-    
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 5px 20px;
 }
-#buttonMenu > ul > li:nth-of-type(2) {border-right: 1px solid #ccc;}
-#buttonMenu > ul > li:nth-of-type(3) {}
+
+#buttonMenu > ul > li:nth-of-type(1) {border-right: 1px solid #ccc; }
+#buttonMenu > ul > li:nth-of-type(2) {border-right: 1px solid #ccc; }
+#buttonMenu > ul > li:nth-of-type(3) {border-right: 1px solid #ccc; }
 
 #buttonMenu > ul > li > a {}
 
-#sns {}
-#company {}
+
+#sns {
+    float: right;
+    width: 130px;
+    height: 100px;
+}
+#sns > ol {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    
+}
+#sns > ol > li {
+    float: left;
+    width: 33.33%;
+    height: 100%;
+}
+#sns > ol > li > a {}
+
+#sns > ol span { /* 안에 가로세로의 값을 넣으면 사진이 뜬다 */
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat; /* 반복 멈춤 */
+    margin: 26px 10px;
+}
+#sns > ol span.sns1 {background-image: url(../images/sns-1.png);}
+#sns > ol span.sns2 {background-image: url(../images/sns-2.png);}
+#sns > ol span.sns3 {background-image: url(../images/sns-3.png);}
+
+
+#company {
+    position: relative;
+    width: 450px;
+    height: 50px;
+}
+#company > span {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    color: #aaa;
+    font-size: 14px;
+}
