@@ -109,21 +109,21 @@
                 /* main 영역 */
                 main {
                     width: 1000px;
-                    height: auto;
+                    height: 650px;
                     border: 1px solid palevioletred;
                     margin: 0 auto;
+                    background-image: url(./images/main_bg.png);
                 }
                 main > section {
                     position: relative;
                     padding-top: 20px;
                     width: 100%;
-                    height: 650px;
+                    height: 100%;
                     border: 1px solid magenta;
                 }
                 main > section > div {
                     width: 200px;
                     height: 200px;
-                    border: 1px solid green;
                     box-sizing: border-box;
                     overflow: none;
                     background-repeat: no-repeat;
@@ -139,41 +139,138 @@
                 main > section > div.box1 > img:nth-child(1) {
                     margin-top: -20px; /* 마이너스 여백 */
                 }
-                main > section > div > img:nth-child(2) {
+                main > section > div.box1 > img:nth-child(2) {
                     position: absolute;
                     left: 0;
                     top: 0;
                 }
 
                 main > section > div.box2 {
+                    position: relative;
+                    margin-left: 200px;
                     float: left;
+                    background-image: url(./images/main_box2_bg.png);
                 }
+                main > section > div.box2 > img:nth-child(1){
+                    position: absolute;
+                    left: 10px;
+                    bottom: 20px;
+                }
+                main > section > div.box2 > img:nth-child(2){
+                    position: absolute;
+                    left: 10px;
+                    top: 20px;
+                }
+                main > section > div.box2 > img:nth-child(3){
+                    position: absolute;
+                    left: 10px;
+                    top: 50px;
+                }
+
                 main > section > div.box3 {
+                    position: relative;
                     float: left;
+                    background-image: url(./images/main_box3_bg.png);
                 }
+                main > section > div.box3 > img:nth-child(1) {
+                    position: absolute;
+                    right: 20px;
+                    bottom: 0;
+                }
+                main > section > div.box3 > img:nth-child(2) {
+                    position: absolute;
+                    left: 10px;
+                    top: 5px;
+                }
+                main > section > div.box3 > img:nth-child(3) {
+                    position: absolute;
+                    left: 20px;
+                    top: 35px;
+                }
+                main > section > div.box3 > img:nth-child(4) {
+                    position: absolute;
+                    left: 20px;
+                    top: 65px;
+                }
+
                 main > section > div.box4 {
-                    
+                    position: relative;
                     float: left;
+                    background-image: url(./images/main_box4_bg.png);
                 }
+                main > section > div.box4 > img:nth-child(1) {
+                    position: absolute;
+                    right: 5px;
+                    bottom: 10px;
+                }
+                main > section > div.box4 > img:nth-child(2) {
+                    position: absolute;
+                    left: 10px;
+                    top: 15px;
+                }
+                main > section > div.box4 > img:nth-child(3) {
+                    position: absolute;
+                    left: 10px;
+                    top: 50px;
+                }
+
                 main > section > div.box5 {
+                    position: relative;
                     clear: both;
                     float: left;
+                    background-image: url(./images/main_box5_bg.jpg);
                 }
+                main > section > div.box5 > img:nth-child(1) {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+
                 main > section > div.box6 {
+                    position: relative;
                     float: left;
+                    background-image: url(./images/main_box6_bg.jpg);
                 }
+                main > section > div.box6 > img:nth-child(1) {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+
                 main > section > div.box7 {
+                    position: relative;
                     clear: both;
                     float: left;
                     margin-left: 200px;
+                    background-image: url(./images/main_box7_bg.png);
                 }
+                main > section > div.box7 > img:nth-child(1) {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                } 
+                main > section > div.box7 > img:nth-child(2) {
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                } 
+                main > section > div.box7 > img:nth-child(3) {
+                    position: absolute;
+                    top: 50px;
+                    left: 20px;
+                } 
     
                 main > article {
+                    position: relative;
                     width: 100%;
                     height: 150px;
                     border: 1px solid blue;
+                    padding-top: 20px;
+                    margin: 0 auto;
+                    
                 }
                 main > article > ol {
+                    position: absolute;
                     width: 100%;
                     height: 100%;
                     overflow: hidden;
@@ -246,16 +343,37 @@
                 </header>
                 <main>
                     <section>
-                        <div class="box1">1
+                        <div class="box1">
                             <img src="./images/main_box1_img.png" alt="나뭇잎">
                             <img src="./images/main_box1_txt.png" alt="첫번째">
                         </div>
-                        <div class="box2">2</div>
-                        <div class="box3">3</div>
-                        <div class="box4">4</div>
-                        <div class="box5">5</div>
-                        <div class="box6">6</div>
-                        <div class="box7">7</div>
+                        <div class="box2">
+                            <img src="./images/main_box2_img.png" alt="사진첩">
+                            <img src="./images/main_box2_tit.png" alt="tour_guide">
+                            <img src="./images/main_box2_txt.png" alt="두번째">
+                        </div>
+                        <div class="box3">
+                            <img src="./images/main_box3_img.png" alt="노트북">
+                            <img src="./images/main_box3_hot.png" alt="hot">
+                            <img src="./images/main_box3_tit.png" alt="reservation">
+                            <img src="./images/main_box3_txt.png" alt="세번째">
+                        </div>
+                        <div class="box4">
+                            <img src="./images/main_box4_img.png" alt="가족">
+                            <img src="./images/main_box4_tit.png" alt="event">
+                            <img src="./images/main_box4_txt.png" alt="네번째">
+                        </div>
+                        <div class="box5">
+                            <img src="./images/main_box5_go.png" alt="거실">
+                        </div>
+                        <div class="box6">
+                            <img src="./images/main_box6_go.png" alt="기와집">
+                        </div>
+                        <div class="box7">
+                            <img src="./images/main_box7_img.png" alt="횡단길">
+                            <img src="./images/main_box7_tit.png" alt="map">
+                            <img src="./images/main_box7_txt.png" alt="일곱번째">
+                        </div>
                     </section>
                     <article>
                         <ol>
