@@ -73,33 +73,37 @@
                     position: absolute;
                     bottom: 0;
                     width: 100%;
-                    height: 30%;
+                    height: 28px;
                     overflow: hidden;
                 }
                 #navber > ul {
                     width: 1000px;
                     height: 100%;
                     margin: 0 auto;
-                    background: #becedb;
+                    background-color: #becedb;
                 }
+
                 #navber > ul > li {
                     float: left;
                     width: 20%;
                     height: 100%;
-                    border: 1px solid white;
                     box-sizing: border-box;
                     
                 }
                 #navber a {
                     display: block;
-                    width: 100%;
+                    width: 200px;
                     height: 100%;
                     color: white;
+                    border-right: 1px solid white;
                     font-weight: bold;
                     text-align: center;
                     font-size: 13px;
                     margin-top: 5px;
                     
+                }
+                #navber a:hover {
+                    color: transparent;
                 }
 
                 /* main 영역 */
@@ -110,6 +114,8 @@
                     margin: 0 auto;
                 }
                 main > section {
+                    position: relative;
+                    padding-top: 20px;
                     width: 100%;
                     height: 650px;
                     border: 1px solid magenta;
@@ -119,29 +125,44 @@
                     height: 200px;
                     border: 1px solid green;
                     box-sizing: border-box;
-                    overflow: hidden;
+                    overflow: none;
+                    background-repeat: no-repeat;
                 }
-                main > section > div:nth-of-type(1) {
+                main > section > div.box1 {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    float: left;
+                    background-image: url(./images/main_box1_bg.png);
+                    margin-top: 20px;
+                }
+                main > section > div.box1 > img:nth-child(1) {
+                    margin-top: -20px; /* 마이너스 여백 */
+                }
+                main > section > div > img:nth-child(2) {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+
+                main > section > div.box2 {
                     float: left;
                 }
-                main > section > div:nth-of-type(2) {
+                main > section > div.box3 {
                     float: left;
                 }
-                main > section > div:nth-of-type(3) {
-                    float: left;
-                }
-                main > section > div:nth-of-type(4) {
+                main > section > div.box4 {
                     
                     float: left;
                 }
-                main > section > div:nth-of-type(5) {
+                main > section > div.box5 {
                     clear: both;
                     float: left;
                 }
-                main > section > div:nth-of-type(6) {
+                main > section > div.box6 {
                     float: left;
                 }
-                main > section > div:nth-of-type(7) {
+                main > section > div.box7 {
                     clear: both;
                     float: left;
                     margin-left: 200px;
@@ -225,13 +246,16 @@
                 </header>
                 <main>
                     <section>
-                        <div>1</div>
-                        <div>2</div>
-                        <div>3</div>
-                        <div>4</div>
-                        <div>5</div>
-                        <div>6</div>
-                        <div>7</div>
+                        <div class="box1">1
+                            <img src="./images/main_box1_img.png" alt="나뭇잎">
+                            <img src="./images/main_box1_txt.png" alt="첫번째">
+                        </div>
+                        <div class="box2">2</div>
+                        <div class="box3">3</div>
+                        <div class="box4">4</div>
+                        <div class="box5">5</div>
+                        <div class="box6">6</div>
+                        <div class="box7">7</div>
                     </section>
                     <article>
                         <ol>
