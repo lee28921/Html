@@ -109,8 +109,7 @@
                 /* main 영역 */
                 main {
                     width: 1000px;
-                    height: 650px;
-                    border: 1px solid palevioletred;
+                    height: auto;
                     margin: 0 auto;
                     background-image: url(./images/main_bg.png);
                 }
@@ -118,8 +117,7 @@
                     position: relative;
                     padding-top: 20px;
                     width: 100%;
-                    height: 100%;
-                    border: 1px solid magenta;
+                    height: 650px;
                 }
                 main > section > div {
                     width: 200px;
@@ -261,29 +259,89 @@
                 } 
     
                 main > article {
-                    position: relative;
                     width: 100%;
                     height: 150px;
-                    border: 1px solid blue;
-                    padding-top: 20px;
+                    border-top: 2px solid gray;
+                    border-bottom: 2px solid gray;
                     margin: 0 auto;
-                    
-                }
-                main > article > ol {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
                     overflow: hidden;
+                    padding-top: 10px;
+                    background-color: #fff;
                 }
-                main > article > ol > li {
+                main > article > div {
+                    position: relative;
                     float: left;
                     width: 25%;
                     height: 100%;
-                    border: 1px solid green;
+                    /* border: 1px solid green; */
                     box-sizing: border-box;
-    
                 }
-    
+
+                main > article > div.info1 > img:nth-child(1) {
+                    position:absolute;
+                    top: 10px;
+                    left: 0;
+                }
+                main > article > div.info1 > img:nth-child(2) {
+                    position:absolute;
+                    top: 40px;
+                    left: 0;
+                }
+
+                
+                table {
+                    font-size: 12px;
+                    font-family: "돋움";
+                    cursor: pointer;
+                }
+                
+
+                main > article > div.info2 > table {
+                    position:absolute;
+                    top: 35px;
+                    left: 5px;
+                }
+                .info2 tr > td:nth-child(3) {
+                    color: gray;
+                }
+                main > article > div.info3 > img {
+                    position:absolute;
+                    top: 10px;
+                    left: 0;
+                }
+                main > article > div.info3 > table {
+                    position:absolute;
+                    top: 35px;
+                    left: 5px;
+                }
+                .info3 tr > td:nth-child(3) {
+                    color: gray;
+                }
+
+                main > article > div.info4 > img {
+                    position:absolute;
+                    top: 10px;
+                    left: 0;
+                }
+                #gallery {
+                    position: absolute;
+                    width: 100%;
+                    height: 80%;
+                    bottom: 0;
+                }
+                #gallery > span {
+                    display: inline-block;
+                    width: 75px;
+                    height: 75px;
+                    background-size: 75px;
+                    background-repeat: no-repeat;
+                    cursor: pointer;
+                    margin-top: 20px;
+                }
+                #gallery > span:nth-of-type(1) {background-image: url(./images/main_latest_gallery1.jpg);}
+                #gallery > span:nth-of-type(2) {background-image: url(./images/main_latest_gallery2.jpg);}
+                #gallery > span:nth-of-type(3) {background-image: url(./images/main_latest_gallery3.jpg);}
+
                 /* footer 영역 */
                 footer {
                     width: 1000px;
@@ -376,21 +434,79 @@
                         </div>
                     </section>
                     <article>
-                        <ol>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ol>
+                        <div class="info1">
+                            <img src="./images/info.png" alt="">
+                            <img src="./images/happy.png" alt="">
+                        </div>
+                        <div class="info2">
+                            <img src="./images/reser.png" alt="예약">
+                            <table>
+                                <tr>
+                                    <td>〉</td>
+                                    <td>이번주말 예약될까요ㅠㅠ</td>
+                                    <td>02-19</td>
+                                </tr>
+                                <tr>
+                                    <td>〉</td>
+                                    <td>예약문의합니다</td>
+                                    <td>02-19</td>
+                                </tr>
+                                <tr>
+                                    <td>〉</td>
+                                    <td>회사 워크샵 문의</td>
+                                    <td>02-19</td>
+                                </tr>
+                                <tr>
+                                    <td>〉</td>
+                                    <td>29~31일까지 자스민방 예...</td>
+                                    <td>02-19</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="info3">
+                            <img src="./images/notice.png" alt="">
+                            <table>
+                                <tr>
+                                    <td>〉</td>
+                                    <td>1111</td>
+                                    <td>04-11</td>
+                                </tr>
+                                <tr>
+                                    <td>〉</td>
+                                    <td>풀장을오픈했어요.</td>
+                                    <td>04-19</td>
+                                </tr>
+                                <tr>
+                                    <td>〉</td>
+                                    <td>실내 금연 꼭 지켜주세요</td>
+                                    <td>04-29</td>
+                                </tr>
+                                <tr>
+                                    <td>〉</td>
+                                    <td>복층에는 8세 이하의 아동 ...</td>
+                                    <td>05-01</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="info4">
+                            <img src="./images/gallery.png" alt="">
+                            <div id="gallery">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
                     </article>
                 </main>
                 <footer>
                     <div id="footer_logo">
                         <span></span>
                     </div>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <div>
+                        <span>(주)리조트 | 대표이사: 홍길동 | 소재지: 부산시 금정구 따듯한동 123-1</span>
+                        <span>Tel: 070-000-0000/ Fax: 051-000-0000/ 사업자등록번호: 123-12-12345</span>
+                        <span>Copyright ⓒ (c) Since 2013 Resort. All rights reserved</span>
+                    </div>
                 </footer>
             </div>
         
