@@ -92,7 +92,7 @@
                 float: left;
                 width: 670px;
                 height: 320px;
-                border: 1px solid green;
+                border: 1px solid #aaa;
                 box-sizing: border-box;
                 background-image: url(./images/main_banner_bg.jpg);
                 overflow: hidden;
@@ -140,7 +140,7 @@
                 float: right;
                 width: 326px;
                 height: 132px;
-                border: 1px solid green;
+                border: 1px solid #aaa;
                 box-sizing: border-box;
                 background: #f2f2f2;
             }
@@ -169,7 +169,7 @@
                 float: right;
                 width: 326px;
                 height: 183px;
-                border: 1px solid green;
+                border: 1px solid #aaa;
                 box-sizing: border-box;
                 margin-top: 5px;
             }
@@ -221,7 +221,7 @@
                 float: left;
                 width: 200px;
                 height: 760px;
-                border: 1px solid green;
+                border: 1px solid #aaa;
                 box-sizing: border-box;
                 margin-top: 5px;
             }
@@ -249,6 +249,85 @@
             }
             .notice tr > td:nth-of-type(1) {
                 width: auto;
+            }
+            .link {
+                width: 100%;
+                height: auto;
+                padding: 5px 10px;
+                box-sizing: border-box;
+            }
+            .link > h3 {
+                font-size: 14px;
+                font-family: '돋움';
+                font-weight: bolder;
+                margin-top: 10px;
+            }
+            .link > ol {
+                margin-top: 10px;
+            }
+            .link > ol > a > li {
+                position: relative;
+                width: 170px;
+                height: 40px;
+                border: 1px solid #aaa;
+                margin-top: 5px;
+                background-color: #f6f6f6;
+            }
+            .link li > span {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                display: inline-block;
+                width: 150px;
+                height: 100%;
+                background-repeat: no-repeat;
+            }
+            #court > span {
+                background-image: url(./images/aside_quick_court.png);
+            }
+            #google > span {
+                background-image: url(./images/aside_quick_google.png);
+            }
+            #naver_map > span {
+                background-image: url(./images/aside_quick_naver_map.png);
+            }
+            #naver_subway > span {
+                background-image: url(./images/aside_quick_naver_subway.png);
+            }
+            .houses {
+                position: relative;
+                width: 100%;
+                height: 170px;
+            }
+            .houses > a > div {
+                width: 100%;
+                height: 80px;
+                background-repeat: no-repeat;
+                border-top: 1px solid #aaa;
+                border-bottom: 1px solid #aaa;
+            }
+            #sell_house {
+                position: absolute;
+                background-image: url(./images/aside_sell_house.jpg);
+                background-position: right;
+               
+            }
+            #sell_house > img {
+                position: absolute;
+                top: 15px;
+                left: 10px;
+            }
+            #buy_house {
+                position: absolute;
+                bottom: 0;
+                background-image: url(./images/aside_buy_house.jpg);
+                background-position: right;
+                
+            }
+            #buy_house > img {
+                position: absolute;
+                top: 15px;
+                left: 10px;
             }
 
             main > section > article {
@@ -438,14 +517,42 @@
                             </table>
                         </article>
                         <article class="link">
-
+                            <h3>바로가기</h3>
+                            <ol>
+                                <a href="#">
+                                    <li id="court">
+                                        <span></span>
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li id="google">
+                                        <span></span>
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li id="naver_map">
+                                        <span></span>
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li id="naver_subway">
+                                        <span></span>
+                                    </li>
+                                </a>
+                            </ol>
                         </article>
-                        <a href="#">
-                            <img src="" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="" alt="">
-                        </a>
+                        <article class="houses">
+                            <a href="#">
+                                <div id="sell_house">
+                                    <img src="./images/aside_sell_txt.png" alt="">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div id="buy_house">
+                                    <img src="./images/aside_buy_txt.png" alt="">
+                                </div>
+                            </a>
+                        </article>
                         <article class="">
                             
                         </article>
