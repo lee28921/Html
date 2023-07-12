@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>레이아웃</title>
+        <style>
+            /* 초기화 */
+            * {
+                padding: 0;
+                margin: 0;
+                font: normal 12px '고딕';
+            }
+
+            ul, ol {list-style : none;}
+            a {text-decoration: none; color : #111;}
+
+            #Wrapper {
+                width: 100%;
+                height: auto;
+            }
+
+            header {
+                width: 100%;
+                height: 90px;
+                border: 1px solid blue;
+                box-sizing: border-box;
+            }
+            header > div {
+                width: 1000px;
+                height: 100%;
+                border: 1px solid #00c;
+                margin: 0 auto;
+                box-sizing: border-box;
+            }
+            header > div > a {}
+            .ul_btn {}
+            .ul_btn > li {}
+            .latest {}
+
+            main {
+                width: 1000px;
+                height: auto;
+                margin: 5px auto;
+                
+            }
+            main > div {
+                width: 100%;
+                height: auto;
+                box-sizing: border-box;
+                overflow: hidden;
+            }
+            .banner {
+                float: left;
+                width: 670px;
+                height: 320px;
+                border: 1px solid green;
+                box-sizing: border-box;
+            }
+            .hp {
+                float: right;
+                width: 326px;
+                height: 132px;
+                border: 1px solid green;
+                box-sizing: border-box;
+            }
+            .qna {
+                float: right;
+                width: 326px;
+                height: 183px;
+                border: 1px solid green;
+                box-sizing: border-box;
+                margin-top: 5px;
+            }
+
+            main > section {
+                
+                overflow: hidden;
+            }
+            main > section > aside {
+                float: left;
+                width: 200px;
+                height: 700px;
+                border: 1px solid green;
+                box-sizing: border-box;
+                margin-top: 5px;
+            }
+            main > section > article {
+                float: right;
+                width: 794px;
+                height: 250px;
+                border: 1px solid green;
+                box-sizing: border-box;
+                margin-top: 5px;
+            }
+
+            footer {
+                width: 1000px;
+                height: 120px;
+                border: 1px solid blue;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <div>
+                    <a href="#">
+                        <img src="" alt="">
+                    </a>
+                    <ul class="ul_btn">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="latest"></div>
+                </div>
+            </header>
+            <main>
+                <div>
+                    <div class="banner"></div>
+                    <div class="hp"></div>
+                    <div class="qna"></div>
+                </div>
+                <section>
+                    <aside></aside>
+                    <article></article>
+                    <article></article>
+                    <article>4</article>
+                </section>
+            </main>
+            <footer>
+                <div></div>
+            </footer>
+        </div>
+    </body>
+</html>

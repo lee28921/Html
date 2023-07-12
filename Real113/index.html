@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>레이아웃</title>
+        <style>
+            /* 초기화 */
+            * {
+                padding: 0;
+                margin: 0;
+                font: normal 12px '고딕';
+            }
+
+            ul, ol {list-style : none;}
+            a {text-decoration: none; color : #111;}
+
+            #Wrapper {
+                width: 100%;
+                height: auto;
+            }
+            /* 헤더 영역 */
+            header {
+                width: 100%;
+                height: 90px;
+                box-sizing: border-box;
+                background-image: url(./images/header_bg.gif);
+                background-repeat: repeat-x;
+                background-position: bottom;
+            }
+            header > div {
+                position: relative;
+                width: 1000px;
+                height: 100%;
+                margin: 0 auto;
+                box-sizing: border-box;
+                overflow: hidden;
+            }
+            header > div > a > img {margin-top: 10px;}
+            .ul_btn {
+                float: right;
+                width: auto;
+                height: 60px;
+                
+            }
+            .ul_btn > li {
+                width: 90px;
+                height: 100%;
+                float: left;
+                margin-top: 5px;
+                padding: 10px;
+                text-align: right;
+               
+            }
+            .ul_btn > li > a {
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 50px;
+            }
+            .ul_btn > li > a:hover {
+                color: #861c1c;
+            }
+            
+            .latest {
+                position: absolute;
+                bottom: 0;
+            }
+            .latest > a > img:nth-child(1) {
+                position: relative;
+                bottom: -7px;
+            }
+            .latest > span > a {
+                line-height: 30px;
+            }
+            .latest > span > a:hover {text-decoration: underline;}
+
+            /* 메인 영역 */
+            main {
+                width: 1000px;
+                height: auto;
+                margin: 5px auto;
+                
+            }
+            main > div {
+                width: 100%;
+                height: auto;
+                box-sizing: border-box;
+                overflow: hidden;
+            }
+            /* 메인 - 상단 */
+            .banner {
+                position: relative;
+                float: left;
+                width: 670px;
+                height: 320px;
+                border: 1px solid green;
+                box-sizing: border-box;
+                background-image: url(./images/main_banner_bg.jpg);
+                overflow: hidden;
+            }
+            .banner > img {
+                position: absolute;
+                left: 25%;
+                top: 25%;
+            }
+            .banner > ul {
+                float: right;
+                width: 90px;
+                height: auto;
+                background: #eee;
+                text-align: center;
+                border: 1px solid #aaa;
+            }
+            .banner > ul > li {
+                position: relative;
+                width: 100%;
+                height: 39px;
+                border-bottom: 1px solid #ccc;
+                line-height: 39px;
+                
+            }
+            .banner > ul > li:hover {
+                background: #fff;
+            }
+            .banner > ul > li > a {
+                font-size: 14px;
+                font-weight: bolder;
+            }
+            .banner > ul > li:nth-child(1) {
+                position: relative;
+                padding-top: 37px;
+            }
+            .banner > ul > li:nth-child(1) > img {
+                position: absolute;
+                top: 0;
+                right: 3px;
+            }
+
+            .hp {
+                position: relative;
+                float: right;
+                width: 326px;
+                height: 132px;
+                border: 1px solid green;
+                box-sizing: border-box;
+                background: #f2f2f2;
+            }
+            .hp > img:nth-child(1) {
+                position: absolute;
+                right: 0;
+            }
+            .hp > img:nth-child(2) {
+                position: absolute;
+                bottom: 20px;
+                left: 10px;
+            }
+            .hp > img:nth-child(3) {
+                position: absolute;
+                top: 20px;
+                left: 10px;
+            }
+            .hp > img:nth-child(4) {
+                position: absolute;
+                top: 45px;
+                left: 10px;
+            }
+
+            .qna {
+                position: relative;
+                float: right;
+                width: 326px;
+                height: 183px;
+                border: 1px solid green;
+                box-sizing: border-box;
+                margin-top: 5px;
+            }
+            .qna > h3 {
+                position: absolute;
+                top: 10px;
+                left: 15px;
+                font-weight: bolder;
+                font-size: 14px;
+            }
+            .qna > table {
+                position: absolute;
+                top: 25px;
+                left: 15px;
+                margin-top: 10px;
+            }
+            .qna > table > tr {
+                margin-bottom: 10px;
+                
+            }
+            .qna tr > td {
+                display: inline-block;
+                width: 220px;
+                overflow: hidden;
+                text-overflow: ellipsis; /* 초과된 부분 ... 처리 */
+                white-space: nowrap; /* 자동 줄바꿈 해제 */
+                color: #383838;
+                line-height: 20px;
+            }
+            .qna tr > td:nth-of-type(1) {
+                width: auto;
+            }
+            .qna tr > td:nth-of-type(2) > a {
+                color: #383838;
+            }
+            .qna tr > td:nth-of-type(2) > a:hover {
+                text-decoration: underline;
+            } 
+            .qna tr > td:nth-of-type(3) {
+                width: 60px;
+                text-align: right;
+            }
+
+            /* 메인 - 하단 */
+            main > section {
+                overflow: hidden;
+            }
+            main > section > aside {
+                float: left;
+                width: 200px;
+                height: 760px;
+                border: 1px solid green;
+                box-sizing: border-box;
+                margin-top: 5px;
+            }
+            .notice {
+                width: 100%;
+                height: 220px;
+                padding: 5px 10px;
+                box-sizing: border-box;
+            }
+            .notice > h3 {
+                font-weight: bold;
+                font-size: 14px;
+                margin-top: 10px;
+            }
+            .notice > table {
+                margin-top: 5px;
+            }
+            .notice tr > td {
+                display: inline-block;
+                width: 165px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                line-height: 17px;
+            }
+            .notice tr > td:nth-of-type(1) {
+                width: auto;
+            }
+
+            main > section > article {
+                float: right;
+                width: 794px;
+                height: 250px;
+                border: 1px solid green;
+                box-sizing: border-box;
+                margin-top: 5px;
+            }
+
+            /* 푸터 영역 */
+            footer {
+                width: 1000px;
+                height: 120px;
+                border: 1px solid blue;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <div>
+                    <a href="./index.html">
+                        <img src="./images/header_logo.jpg" alt="로고">
+                    </a>
+                    <ul class="ul_btn">
+                        <li>
+                            <a href="#">회사소개</a>
+                        </li>
+                        <li>
+                            <a href="#">매물정보</a>
+                        </li>
+                        <li>
+                            <a href="#">매도의뢰</a>
+                        </li>
+                        <li>
+                            <a href="#">매입의뢰</a>
+                        </li>
+                        <li>
+                            <a href="#">질문답변</a>
+                        </li>
+                    </ul>
+                    <div class="latest">
+                        <a href="#">
+                            <img src="./images/header_txt_latest.gif" alt="최신매물정보">
+                        </a>
+                        <img src="./images/ico_latest.gif" alt="">
+                        <span>
+                            <a href="#">[아파트] 삼성동 전세 (방:3/욕실2) / 157㎡ / 매매가 21,100</a>
+                        </span>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div>
+                    <div class="banner">
+                        <img src="./images/main_banner_txt.png" alt="">
+                        <ul>
+                            <li>
+                                <img src="./images/main_banner_local.jpg" alt="">
+                            </li>
+                            <li>
+                                <a href="#">서울시</a>
+                            </li>
+                            <li>
+                                <a href="#">경기도</a>
+                            </li>
+                            <li>
+                                <a href="#">대전시</a>
+                            </li>
+                            <li>
+                                <a href="#">대구시</a>
+                            </li>
+                            <li>
+                                <a href="#">부산시</a>
+                            </li>
+                            <li>
+                                <a href="#">광주시</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hp">
+                        <img src="./images/main_call_phone.png" alt="핸드폰">
+                        <img src="./images/main_call_num.png" alt="번호">
+                        <img src="./images/main_call_tit.png" alt="문의로고">
+                        <img src="./images/main_call_txt.png" alt="문의사항">
+                    </div>
+                    <div class="qna">
+                        <h3>질문과 답변</h3>
+                        <table>
+                            <tr>
+                                <td><img src="./images/ico_latest.gif" alt=""></td>
+                                <td><a href="#">테스트입니다.</a></td>
+                                <td>20-05-13</td>
+                            </tr>
+                            <tr>
+                                <td><img src="./images/ico_latest.gif" alt=""></td>
+                                <td>
+                                    <a href="#">[문의] 분양상품 중 문의 드립니다. 빠른 답변 부탁드립니다.</a>	
+                                </td>
+                                <td>20-05-13</td>
+                            </tr>
+                            <tr>
+                                <td><img src="./images/ico_latest.gif" alt=""></td>
+                                <td><a href="#">[문의] 분양상품 중 문의 드립니다. 빠른 답변 부탁드립니다.</a></td>
+                                <td>20-05-13</td>
+                            </tr>
+                            <tr>
+                                <td><img src="./images/ico_latest.gif" alt=""></td>
+                                <td><a href="#">[문의] 분양상품 중 문의 드립니다. 빠른 답변 부탁드립니다.</a></td>
+                                <td>20-05-13</td>
+                            </tr>
+                            <tr>
+                                <td><img src="./images/ico_latest.gif" alt=""></td>
+                                <td><a href="#">[문의] 분양상품 중 문의 드립니다. 빠른 답변 부탁드립니다.</a></td>
+                                <td>20-05-13</td>
+                            </tr>
+                            <tr>
+                                <td><img src="./images/ico_latest.gif" alt=""></td>
+                                <td><a href="#">[문의] 분양상품 중 문의 드립니다. 빠른 답변 부탁드립니다.</a></td>
+                                <td>20-05-13</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <section>
+                    <aside>
+                        <article class="notice">
+                            <h3>공지사항</h3>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="./images/ico_latest.gif" alt="">
+                                    </td>
+                                    <td><a href="#">전국 매물 보유량 최다! 계약 만</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./images/ico_latest.gif" alt="">
+                                    </td>
+                                    <td><a href="#">전국 매물 보유량 최다! 계약 만</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./images/ico_latest.gif" alt="">
+                                    </td>
+                                    <td><a href="#">전국 매물 보유량 최다! 계약 만</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./images/ico_latest.gif" alt="">
+                                    </td>
+                                    <td><a href="#">전국 매물 보유량 최다! 계약 만</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./images/ico_latest.gif" alt="">
+                                    </td>
+                                    <td><a href="#">전국 매물 보유량 최다! 계약 만</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./images/ico_latest.gif" alt="">
+                                    </td>
+                                    <td><a href="#">전국 매물 보유량 최다! 계약 만</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./images/ico_latest.gif" alt="">
+                                    </td>
+                                    <td><a href="#">전국 매물 보유량 최다! 계약 만</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./images/ico_latest.gif" alt="">
+                                    </td>
+                                    <td><a href="#">전국 매물 보유량 최다! 계약 만</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./images/ico_latest.gif" alt="">
+                                    </td>
+                                    <td><a href="#">전국 매물 보유량 최다! 계약 만</a></td>
+                                </tr>
+                            </table>
+                        </article>
+                        <article class="link">
+
+                        </article>
+                        <a href="#">
+                            <img src="" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="" alt="">
+                        </a>
+                        <article class="">
+                            
+                        </article>
+                    </aside>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                </section>
+            </main>
+            <footer>
+                <div></div>
+            </footer>
+        </div>
+    </body>
+</html>
