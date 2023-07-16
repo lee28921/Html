@@ -3,350 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>레이아웃</title>
-        <style>
-            /* 초기화 */
-            * {
-                padding: 0;
-                margin: 0;
-                font: normal 12px '고딕';
-            }
-
-            ul, ol {list-style : none;}
-            a {text-decoration: none; color : #111;}
-
-            #Wrapper {
-                width: 100%;
-                height: auto;
-            }
-            /* 헤더 영역 */
-            header {
-                width: 100%;
-                height: 90px;
-                box-sizing: border-box;
-                background-image: url(./images/header_bg.gif);
-                background-repeat: repeat-x;
-                background-position: bottom;
-            }
-            header > div {
-                position: relative;
-                width: 1000px;
-                height: 100%;
-                margin: 0 auto;
-                box-sizing: border-box;
-                overflow: hidden;
-            }
-            header > div > a > img {margin-top: 10px;}
-            .ul_btn {
-                float: right;
-                width: auto;
-                height: 60px;
-                
-            }
-            .ul_btn > li {
-                width: 90px;
-                height: 100%;
-                float: left;
-                margin-top: 5px;
-                padding: 10px;
-                text-align: right;
-               
-            }
-            .ul_btn > li > a {
-                font-size: 18px;
-                font-weight: bold;
-                line-height: 50px;
-            }
-            .ul_btn > li > a:hover {
-                color: #861c1c;
-            }
-            
-            .latest {
-                position: absolute;
-                bottom: 0;
-            }
-            .latest > a > img:nth-child(1) {
-                position: relative;
-                bottom: -7px;
-            }
-            .latest > span > a {
-                line-height: 30px;
-            }
-            .latest > span > a:hover {text-decoration: underline;}
-
-            /* 메인 영역 */
-            main {
-                width: 1000px;
-                height: auto;
-                margin: 5px auto;
-                
-            }
-            main > div {
-                width: 100%;
-                height: auto;
-                box-sizing: border-box;
-                overflow: hidden;
-            }
-            /* 메인 - 상단 */
-            .banner {
-                position: relative;
-                float: left;
-                width: 670px;
-                height: 320px;
-                border: 1px solid #aaa;
-                box-sizing: border-box;
-                background-image: url(./images/main_banner_bg.jpg);
-                overflow: hidden;
-            }
-            .banner > img {
-                position: absolute;
-                left: 25%;
-                top: 25%;
-            }
-            .banner > ul {
-                float: right;
-                width: 90px;
-                height: auto;
-                background: #eee;
-                text-align: center;
-                border: 1px solid #aaa;
-            }
-            .banner > ul > li {
-                position: relative;
-                width: 100%;
-                height: 39px;
-                border-bottom: 1px solid #ccc;
-                line-height: 39px;
-                
-            }
-            .banner > ul > li:hover {
-                background: #fff;
-            }
-            .banner > ul > li > a {
-                font-size: 14px;
-                font-weight: bolder;
-            }
-            .banner > ul > li:nth-child(1) {
-                position: relative;
-                padding-top: 37px;
-            }
-            .banner > ul > li:nth-child(1) > img {
-                position: absolute;
-                top: 0;
-                right: 3px;
-            }
-
-            .hp {
-                position: relative;
-                float: right;
-                width: 326px;
-                height: 132px;
-                border: 1px solid #aaa;
-                box-sizing: border-box;
-                background: #f2f2f2;
-            }
-            .hp > img:nth-child(1) {
-                position: absolute;
-                right: 0;
-            }
-            .hp > img:nth-child(2) {
-                position: absolute;
-                bottom: 20px;
-                left: 10px;
-            }
-            .hp > img:nth-child(3) {
-                position: absolute;
-                top: 20px;
-                left: 10px;
-            }
-            .hp > img:nth-child(4) {
-                position: absolute;
-                top: 45px;
-                left: 10px;
-            }
-
-            .qna {
-                position: relative;
-                float: right;
-                width: 326px;
-                height: 183px;
-                border: 1px solid #aaa;
-                box-sizing: border-box;
-                margin-top: 5px;
-            }
-            .qna > h3 {
-                position: absolute;
-                top: 10px;
-                left: 15px;
-                font-weight: bolder;
-                font-size: 14px;
-            }
-            .qna > table {
-                position: absolute;
-                top: 25px;
-                left: 15px;
-                margin-top: 10px;
-            }
-            .qna > table > tr {
-                margin-bottom: 10px;
-                
-            }
-            .qna tr > td {
-                display: inline-block;
-                width: 220px;
-                overflow: hidden;
-                text-overflow: ellipsis; /* 초과된 부분 ... 처리 */
-                white-space: nowrap; /* 자동 줄바꿈 해제 */
-                color: #383838;
-                line-height: 20px;
-            }
-            .qna tr > td:nth-of-type(1) {
-                width: auto;
-            }
-            .qna tr > td:nth-of-type(2) > a {
-                color: #383838;
-            }
-            .qna tr > td:nth-of-type(2) > a:hover {
-                text-decoration: underline;
-            } 
-            .qna tr > td:nth-of-type(3) {
-                width: 60px;
-                text-align: right;
-            }
-
-            /* 메인 - 하단 */
-            main > section {
-                overflow: hidden;
-            }
-            main > section > aside {
-                float: left;
-                width: 200px;
-                height: 760px;
-                border: 1px solid #aaa;
-                box-sizing: border-box;
-                margin-top: 5px;
-            }
-            .notice {
-                width: 100%;
-                height: 220px;
-                padding: 5px 10px;
-                box-sizing: border-box;
-            }
-            .notice > h3 {
-                font-weight: bold;
-                font-size: 14px;
-                margin-top: 10px;
-            }
-            .notice > table {
-                margin-top: 5px;
-            }
-            .notice tr > td {
-                display: inline-block;
-                width: 165px;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                line-height: 17px;
-            }
-            .notice tr > td:nth-of-type(1) {
-                width: auto;
-            }
-            .link {
-                width: 100%;
-                height: auto;
-                padding: 5px 10px;
-                box-sizing: border-box;
-            }
-            .link > h3 {
-                font-size: 14px;
-                font-family: '돋움';
-                font-weight: bolder;
-                margin-top: 10px;
-            }
-            .link > ol {
-                margin-top: 10px;
-            }
-            .link > ol > a > li {
-                position: relative;
-                width: 170px;
-                height: 40px;
-                border: 1px solid #aaa;
-                margin-top: 5px;
-                background-color: #f6f6f6;
-            }
-            .link li > span {
-                position: absolute;
-                top: 10px;
-                left: 10px;
-                display: inline-block;
-                width: 150px;
-                height: 100%;
-                background-repeat: no-repeat;
-            }
-            #court > span {
-                background-image: url(./images/aside_quick_court.png);
-            }
-            #google > span {
-                background-image: url(./images/aside_quick_google.png);
-            }
-            #naver_map > span {
-                background-image: url(./images/aside_quick_naver_map.png);
-            }
-            #naver_subway > span {
-                background-image: url(./images/aside_quick_naver_subway.png);
-            }
-            .houses {
-                position: relative;
-                width: 100%;
-                height: 170px;
-            }
-            .houses > a > div {
-                width: 100%;
-                height: 80px;
-                background-repeat: no-repeat;
-                border-top: 1px solid #aaa;
-                border-bottom: 1px solid #aaa;
-            }
-            #sell_house {
-                position: absolute;
-                background-image: url(./images/aside_sell_house.jpg);
-                background-position: right;
-               
-            }
-            #sell_house > img {
-                position: absolute;
-                top: 15px;
-                left: 10px;
-            }
-            #buy_house {
-                position: absolute;
-                bottom: 0;
-                background-image: url(./images/aside_buy_house.jpg);
-                background-position: right;
-                
-            }
-            #buy_house > img {
-                position: absolute;
-                top: 15px;
-                left: 10px;
-            }
-
-            main > section > article {
-                float: right;
-                width: 794px;
-                height: 250px;
-                border: 1px solid green;
-                box-sizing: border-box;
-                margin-top: 5px;
-            }
-
-            /* 푸터 영역 */
-            footer {
-                width: 1000px;
-                height: 120px;
-                border: 1px solid blue;
-                margin: 0 auto;
-            }
-        </style>
+        <!-- 외부 CSS 파일 적용 -->
+        <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
         <div id="wrapper">
@@ -544,26 +202,217 @@
                         <article class="houses">
                             <a href="#">
                                 <div id="sell_house">
-                                    <img src="./images/aside_sell_txt.png" alt="">
+                                    <img src="./images/aside_sell_txt.png" alt="초록지붕">
                                 </div>
                             </a>
                             <a href="#">
                                 <div id="buy_house">
-                                    <img src="./images/aside_buy_txt.png" alt="">
+                                    <img src="./images/aside_buy_txt.png" alt="빨간지붕">
                                 </div>
                             </a>
                         </article>
-                        <article class="">
-                            
+                        <article class="interior">
+                            <div>
+                                <img src="./images/aside_banner_ad.png" alt="AD">
+                                <img src="./images/aside_banner_txt.png" alt="내추럴_가구">
+                                <a href="#"><img src="./images/aside_banner_go.png" alt="바로가기"></a>
+                            </div>
                         </article>
                     </aside>
-                    <article></article>
-                    <article></article>
-                    <article></article>
+                    <article>
+                        <h3>서울시 매물 정보</h3>
+                        <div class="more">
+                            <a href="#"><img src="./images/ico_more.png" alt="more"></a>
+                        </div>
+                        <div class="sample_poto">
+                            <ol>
+                                <li>
+                                    <img src="./images/thumbnail_sample1.jpg" alt="샘플1">
+                                    <a href="#">
+                                        <p>
+                                            [아파트] 강변 신축아파트 분
+                                            양 (방:5/욕실2) / 189㎡ / 매매
+                                            가 20,800 분양가 20,800
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./images/thumbnail_sample2.jpg" alt="샘플2">
+                                    <a href="#">
+                                        <p>
+                                            [아파트] 삼성동 전세 (방:3/
+                                            욕실2) / 157㎡ / 매매가 
+                                            21,100
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./images/thumbnail_sample3.jpg" alt="샘플3">
+                                    <a href="#">
+                                        <p>
+                                            [빌라] 안국동 매매 (방:8/욕
+                                            실3) / 309㎡ / 매매가 
+                                            11,800
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./images/thumbnail_sample4.jpg" alt="샘플4">
+                                    <a href="#">
+                                        <p>
+                                            [복층빌라] 한남동 월세 (방:4/욕
+                                            실2) / 157㎡ / 보증
+                                            금 3,000 월세80
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./images/thumbnail_sample5.jpg" alt="샘플5">
+                                    <a href="#">
+                                        <p>
+                                            [아파트] 역삼동 급매 (방:3/
+                                            욕실2) / 109㎡ / 매매가 
+                                            11,800
+                                        </p>
+                                    </a>
+                                </li>
+                            </ol>
+                        </div>
+                    </article>
+                    <article>
+                        <h3>경기도 매물 정보</h3>
+                        <div class="more">
+                            <a href="#"><img src="./images/ico_more.png" alt="more"></a>
+                        </div>
+                        <div class="sample_poto">
+                            <ol>
+                                <li>
+                                    <img src="./images/thumbnail_sample1.jpg" alt="샘플1">
+                                    <a href="#">
+                                        <p>
+                                            [아파트] 강변 신축아파트 분
+                                            양 (방:5/욕실2) / 189㎡ / 매매
+                                            가 20,800 분양가 20,800
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./images/thumbnail_sample2.jpg" alt="샘플2">
+                                    <a href="#">
+                                        <p>
+                                            [아파트] 삼성동 전세 (방:3/
+                                            욕실2) / 157㎡ / 매매가 
+                                            21,100
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./images/thumbnail_sample3.jpg" alt="샘플3">
+                                    <a href="#">
+                                        <p>
+                                            [빌라] 안국동 매매 (방:8/욕
+                                            실3) / 309㎡ / 매매가 
+                                            11,800
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./images/thumbnail_sample4.jpg" alt="샘플4">
+                                    <a href="#">
+                                        <p>
+                                            [복층빌라] 한남동 월세 (방:4/욕
+                                            실2) / 157㎡ / 보증
+                                            금 3,000 월세80
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./images/thumbnail_sample5.jpg" alt="샘플5">
+                                    <a href="#">
+                                        <p>
+                                            [아파트] 역삼동 급매 (방:3/
+                                            욕실2) / 109㎡ / 매매가 
+                                            11,800
+                                        </p>
+                                    </a>
+                                </li>
+                            </ol>
+                        </div>
+                    </article>
+                    <article>
+                        <h3>부산시 매물 정보</h3>
+                        <div class="more">
+                            <a href="#"><img src="./images/ico_more.png" alt="more"></a>
+                        </div>
+                        <div class="sample_poto">
+                            <ol>
+                                <li>
+                                    <img src="./images/thumbnail_sample1.jpg" alt="샘플1">
+                                    <a href="#">
+                                        <p>
+                                            [아파트] 강변 신축아파트 분
+                                            양 (방:5/욕실2) / 189㎡ / 매매
+                                            가 20,800 분양가 20,800
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./images/thumbnail_sample2.jpg" alt="샘플2">
+                                    <a href="#">
+                                        <p>
+                                            [아파트] 삼성동 전세 (방:3/
+                                            욕실2) / 157㎡ / 매매가 
+                                            21,100
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./images/thumbnail_sample3.jpg" alt="샘플3">
+                                    <a href="#">
+                                        <p>
+                                            [빌라] 안국동 매매 (방:8/욕
+                                            실3) / 309㎡ / 매매가 
+                                            11,800
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./images/thumbnail_sample4.jpg" alt="샘플4">
+                                    <a href="#">
+                                        <p>
+                                            [복층빌라] 한남동 월세 (방:4/욕
+                                            실2) / 157㎡ / 보증
+                                            금 3,000 월세80
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./images/thumbnail_sample5.jpg" alt="샘플5">
+                                    <a href="#">
+                                        <p>
+                                            [아파트] 역삼동 급매 (방:3/
+                                            욕실2) / 109㎡ / 매매가 
+                                            11,800
+                                        </p>
+                                    </a>
+                                </li>
+                            </ol>
+                        </div>
+                    </article>
                 </section>
             </main>
             <footer>
-                <div></div>
+                <div>
+                    <img src="./images/footer_logo.jpg" alt="부동산113">
+                    <p>
+                        (주)컴퍼니 / 사업자등록번호 123-45-67890 / 통신판매업신고 제 2013-컴퍼니구-123호 / 등록번호 컴퍼니01234 (2013.04.01) / 발행인 : 홍길동 <br>
+                        대표 : 홍길동 / 이메일 : email@mail.mail / 전화 : 01) 234-5678 / 부산시 금정구 따듯한동 123-1
+                    </p>
+                    <p>
+                        Copyright(C)컴퍼니 All rights reserved.
+                    </p>
+                </div>
+                
             </footer>
         </div>
     </body>
