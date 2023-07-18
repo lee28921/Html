@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>에코마켓</title>
+        <!--
+            디자인 작업
+            http://chhak.click/EcoMarket/index.html
+        -->
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            ol, ul {
+                list-style: none;
+            }
+            a {text-decoration: none; color : #111;}
+
+            #container {
+                width: 100%;
+                height: auto;
+                border: 1px solid purple;
+            }
+
+            /* 헤더 영역 */
+            header {
+                width: 100%;
+                height: 202px;
+                border: 1px solid blue;
+            }
+            header > div {
+                width: 100%;
+                border: 1px solid green;
+            }
+            header > div > div,nav {
+                width: 1126px;
+                height: 100%;
+                border: 1px solid orange;
+                box-sizing: border-box;
+                margin: 0 auto;
+            }
+            header > div.myPage {
+                height: 43px;
+            }
+            header > div.logo {
+                height: 110px;
+            }
+            header > div.navbar {
+                height: 46px;
+            }
+            /* 메인 영역 */
+            main {
+                width: 100%;
+                height: auto;
+            }
+            main > .mainFrom {
+                width: 100%;
+                height: auto;
+                border: 1px solid blue;
+                padding: 40px 0;
+            }
+            main > .bw {
+                width: 100%;
+                height: 220px;
+                border-top: 1px solid green;
+                border-bottom: 1px solid green;
+                box-sizing: border-box;
+            }
+            
+            main > .banner_top > article {
+                width: 1126px;
+                height: 398px;
+                border: 1px solid orange;
+                margin: 0 auto;
+            }
+
+            main > .new > article {
+                width: 1126px;
+                height: 480px;
+                border: 1px solid orange;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+            main > .new > article > div {
+                width: 345px;
+                height: 50%;
+                border: 1px solid plum;
+                box-sizing: border-box;
+            }
+            main > .new > article > div:nth-of-type(1) {
+                float: left;
+                width: 434px;
+                height: 100%;
+            }
+            main > .new > article > div:nth-of-type(2) {float: left;}
+            main > .new > article > div:nth-of-type(3) {float: left;}
+            main > .new > article > div:nth-of-type(4) {float: left;}
+            main > .new > article > div:nth-of-type(5) {float: left;}
+
+            main > .meister > article {
+                width: 1126px;
+                height: 538px;
+                border: 1px solid orange;
+                box-sizing: border-box;
+                overflow: hidden;
+            }
+            main > .meister > article > div {
+                float: left;
+                width: 25%;
+                height: 334px;
+                border: 1px solid pink;
+                box-sizing: border-box;
+            }
+
+            main > .marketplace > article {
+                width: 1126px;
+                height: auto;
+                border: 1px solid orange;
+                box-sizing: border-box;
+                overflow: hidden;
+            }
+            main > .marketplace > article > div {
+                float: left;
+                width: 25%;
+                height: 400px;
+                border: 1px solid pink;
+                box-sizing: border-box;
+            }
+            /* 푸터 영역 */
+            footer {
+                width: 100%;
+                height: auto;
+                border: 1px solid blue;
+                box-sizing: border-box;
+            }
+            footer > div {
+                width: 1126px;
+                height: 220px;
+                border: 1px solid green;
+                box-sizing: border-box;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <div class="myPage">
+                    <div></div>
+                </div>
+                <div class="logo">
+                    <div></div>
+                </div>
+                <div class="navbar">
+                    <nav></nav>
+                </div>
+            </header>
+            <main>
+                <section class="mainFrom banner_top">
+                    <article></article>
+                </section>
+                <section class="mainFrom new">
+                    <article>
+                        <h3></h3>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                    </article>
+                </section>
+                <section class="mainFrom meister">
+                    <article>
+                        <h3></h3>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                    </article>
+                </section>
+                <section class="bw banner_center">
+
+                </section>
+                <section class="mainFrom marketplace organic">
+                    <article>
+                        <h3></h3>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                    </article>
+                </section>
+                <section class="bw banner_bottom">
+
+                </section>
+                <section class="mainFrom marketplace grain">
+                    <article>
+                        <h3></h3>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                    </article>
+                </section>
+            </main>
+            <footer>
+                <div></div>
+            </footer>
+        </div>
+    </body>
+</html>
