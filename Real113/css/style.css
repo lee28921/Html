@@ -1,0 +1,424 @@
+/* 초기화 */
+* {
+    padding: 0;
+    margin: 0;
+    font: normal 12px '고딕';
+}
+
+ul, ol {list-style : none;}
+a {text-decoration: none; color : #111;}
+
+#Wrapper {
+    width: 100%;
+    height: auto;
+}
+/* 헤더 영역 */
+header {
+    width: 100%;
+    height: 90px;
+    box-sizing: border-box;
+    background-image: url(../images/header_bg.gif);
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+header > div {
+    position: relative;
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+header > div > a > img {margin-top: 10px;}
+.ul_btn {
+    float: right;
+    width: auto;
+    height: 60px;
+    
+}
+.ul_btn > li {
+    width: 90px;
+    height: 100%;
+    float: left;
+    margin-top: 5px;
+    padding: 10px;
+    text-align: right;
+    
+}
+.ul_btn > li > a {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 50px;
+}
+.ul_btn > li > a:hover {
+    color: #861c1c;
+}
+
+.latest {
+    position: absolute;
+    bottom: 0;
+}
+.latest > a > img:nth-child(1) {
+    position: relative;
+    bottom: -7px;
+}
+.latest > span > a {
+    line-height: 30px;
+}
+.latest > span > a:hover {text-decoration: underline;}
+
+/* 메인 영역 */
+main {
+    width: 1000px;
+    height: auto;
+    margin: 5px auto;
+    
+}
+main > div {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+/* 메인 - 상단 */
+.banner {
+    position: relative;
+    float: left;
+    width: 670px;
+    height: 320px;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    background-image: url(../images/main_banner_bg.jpg);
+    overflow: hidden;
+}
+.banner > img {
+    position: absolute;
+    left: 25%;
+    top: 25%;
+}
+.banner > ul {
+    float: right;
+    width: 90px;
+    height: auto;
+    background: #eee;
+    text-align: center;
+    border: 1px solid #aaa;
+}
+.banner > ul > li {
+    position: relative;
+    width: 100%;
+    height: 39px;
+    border-bottom: 1px solid #ccc;
+    line-height: 39px;
+    
+}
+.banner > ul > li:hover {
+    background: #fff;
+}
+.banner > ul > li > a {
+    font-size: 14px;
+    font-weight: bolder;
+}
+.banner > ul > li:nth-child(1) {
+    position: relative;
+    padding-top: 37px;
+}
+.banner > ul > li:nth-child(1) > img {
+    position: absolute;
+    top: 0;
+    right: 3px;
+}
+
+.hp {
+    position: relative;
+    float: right;
+    width: 326px;
+    height: 132px;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    background: #f2f2f2;
+}
+.hp > img:nth-child(1) {
+    position: absolute;
+    right: 0;
+}
+.hp > img:nth-child(2) {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+.hp > img:nth-child(3) {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+.hp > img:nth-child(4) {
+    position: absolute;
+    top: 45px;
+    left: 10px;
+}
+
+.qna {
+    position: relative;
+    float: right;
+    width: 326px;
+    height: 183px;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+.qna > h3 {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-weight: bolder;
+    font-size: 14px;
+}
+.qna > table {
+    position: absolute;
+    top: 25px;
+    left: 15px;
+    margin-top: 10px;
+}
+.qna > table > tr {
+    margin-bottom: 10px;
+    
+}
+.qna tr > td {
+    display: inline-block;
+    width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis; /* 초과된 부분 ... 처리 */
+    white-space: nowrap; /* 자동 줄바꿈 해제 */
+    color: #383838;
+    line-height: 20px;
+}
+.qna tr > td:nth-of-type(1) {
+    width: auto;
+}
+.qna tr > td:nth-of-type(2) > a {
+    color: #383838;
+}
+.qna tr > td:nth-of-type(2) > a:hover {
+    text-decoration: underline;
+} 
+.qna tr > td:nth-of-type(3) {
+    width: 60px;
+    text-align: right;
+}
+
+/* 메인 - 하단 */
+main > section {
+    overflow: hidden;
+}
+main > section > aside {
+    float: left;
+    width: 200px;
+    height: 760px;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+.notice {
+    width: 100%;
+    height: 220px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+.notice > h3 {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.notice > table {
+    margin-top: 5px;
+}
+.notice tr > td {
+    display: inline-block;
+    width: 165px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 17px;
+}
+.notice tr > td:nth-of-type(1) {
+    width: auto;
+}
+.link {
+    width: 100%;
+    height: auto;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+.link > h3 {
+    font-size: 14px;
+    font-family: '돋움';
+    font-weight: bolder;
+    margin-top: 10px;
+}
+.link > ol {
+    margin-top: 10px;
+}
+.link > ol > a > li {
+    position: relative;
+    width: 170px;
+    height: 40px;
+    border: 1px solid #aaa;
+    margin-top: 5px;
+    background-color: #f6f6f6;
+}
+.link li > span {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: inline-block;
+    width: 150px;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+#court > span {
+    background-image: url(../images/aside_quick_court.png);
+}
+#google > span {
+    background-image: url(../images/aside_quick_google.png);
+}
+#naver_map > span {
+    background-image: url(../images/aside_quick_naver_map.png);
+}
+#naver_subway > span {
+    background-image: url(../images/aside_quick_naver_subway.png);
+}
+.houses {
+    position: relative;
+    width: 100%;
+    height: 170px;
+}
+.houses > a > div {
+    width: 100%;
+    height: 80px;
+    background-repeat: no-repeat;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+#sell_house {
+    position: absolute;
+    background-image: url(../images/aside_sell_house.jpg);
+    background-position: right;
+    
+}
+#buy_house {
+    position: absolute;
+    bottom: 0;
+    background-image: url(../images/aside_buy_house.jpg);
+    background-position: right;
+    
+}
+main > section > aside > article.houses > a > div > img {
+    position: absolute; 
+    top: 15px;
+    left: 10px;
+}
+main > section > aside > article.interior > div {
+    position: relative;
+    left: -2;
+    bottom: 0;
+    display: inline-block;
+    width: 100%;
+    height: 137px;
+    background-image: url(../images/aside_banner_bg.jpg);
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    background-size: 200px 150px;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+}
+main article.interior > div > img:nth-child(1) {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+main article.interior > div > img:nth-child(2) {
+    position: absolute;
+    top: 37px;
+    left: 10px;
+}
+main article.interior > div > a > img {
+    position: absolute;
+    top: 65px;
+    left: 10px;
+}
+
+main > section > article {
+    position: relative;
+    float: right;
+    width: 794px;
+    height: 250px;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    margin-top: 5px;
+    padding: 20px 10px;
+}
+main > section > article > h3 {
+    font-weight: bolder;
+    font-size: 14px;
+}
+main > section > article > div.more {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    width: 30px;
+    height: 30px;
+}
+main div.sample_poto {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+main div.sample_poto > ol {
+    overflow: hidden;
+}
+main div.sample_poto > ol > li {
+    float: left;
+    width: 150px;
+    height: auto;
+    margin-right: 3px;
+}
+main div.sample_poto > ol > li > img {
+    width: 150px;
+    height: 100px;
+}
+main div.sample_poto > ol > li > a:hover {
+    text-decoration: underline;
+}
+main div.sample_poto > ol > li > a > p {
+    text-align: center;
+}
+main div.sample_poto > ol > li > a > p:nth-of-type(1) {
+    text-align: left;
+}
+
+
+/* 푸터 영역 */
+footer {
+    width: 1000px;
+    height: 120px;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+footer > div {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+footer > div > p {
+    margin-left: 10px;
+    color: #383838;
+    line-height: 2;
+}
+footer> div > p:nth-of-type(1) {
+    font-size: 10px;
+}
+footer> div > p:nth-of-type(2) {
+    font-weight: bold;
+}
