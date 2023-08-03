@@ -99,9 +99,9 @@ main {
     position: absolute;
 }
 
-#sliderShow > section > img:nth-child(1) {left:     0; top: 0;} /*사진들은 다 오른쪽에 숨겨짐*/
-#sliderShow > section > img:nth-child(2) {left: 100%; top: 0;}
-#sliderShow > section > img:nth-child(3) {left: 200%; top: 0;}
+#slideShow > section > img:nth-child(1) {left:     0; top: 0;} /*사진들은 다 오른쪽에 숨겨짐*/
+#slideShow > section > img:nth-child(2) {left: 100%; top: 0;}
+#slideShow > section > img:nth-child(3) {left: 200%; top: 0;}
 
 #slideShow > button {
     position: absolute;
@@ -151,7 +151,7 @@ main {
     display: none; /* radio 버튼만 안보이게 기능만 사용하도록 */
     
 }
-#tabMenu > label:first-child { /* 체크된 상태 */
+#tabMenu > label.on { /* 체크된 상태 */
     color: #b00;
 }
 #tabMenu > section {
@@ -269,9 +269,9 @@ footer {
 }
 #sns > ol > li > a {}
 
-#sns > ol span { /* 안에 가로세로의 값을 넣으면 사진이 뜬다 */
+#sns > ol span { 
     display: inline-block;
-    width: 30px;
+    width: 30px; /* 안에 가로세로의 값을 넣으면 사진이 뜬다 */
     height: 30px;
     background-repeat: no-repeat; /* 반복 멈춤 */
     margin: 26px 10px;
