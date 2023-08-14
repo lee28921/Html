@@ -4,77 +4,6 @@
     <meta charset="UTF-8">
     <title>팜스토리::인사말</title>
     <link rel="stylesheet" href="../css/style.css">
-    <style>
-        /* 서브페이지 공통 */
-        #sub {
-            width: 100%;
-            height: auto;
-        }
-        #sub > .bg {
-            position: relative;
-            width: 100%;
-            height: 184px;
-            background-image: url('../images/sub_top_bg.jpg');
-        }
-        #sub > .bg > img {
-            position: absolute;
-            left: 16px;
-            bottom: 16px;
-        }
-        #sub > section {
-            width: 100%;
-            height: auto;
-            overflow: hidden;
-        }
-        
-        #sub > section > aside {
-            float: left;
-            width: 180px;
-            height: 650px;
-            background-image: url('../images/sub_aside_bg_line.png');
-            background-repeat: no-repeat;
-            background-position: right;
-        }
-        #sub > section > aside > img {
-            margin: 16px;
-        }
-        #sub > section > aside > .lnb {
-            width: 175px;
-            height: 233px;
-            padding-top: 26px;
-            background-image: url('../images/sub_aside_bg_lnb.png');
-        }
-        #sub > section > aside > .lnb > li {
-            width: 100%;
-            height: 29px;
-            margin-bottom: 6px;
-        }
-        #sub > section > aside > .lnb > li > a {
-            display: block;
-            width: 100%;
-            height: 100%;
-            font-size: 0;
-        }
-        #sub > section > aside > .lnb > li:nth-child(1) > a {background-image: url('../images/sub_cate1_lnb1.png');}
-        #sub > section > aside > .lnb > li:nth-child(2) > a {background-image: url('../images/sub_cate1_lnb2.png');}
-        #sub > section > aside > .lnb > li:nth-child(1) > a:hover {background-image: url('../images/sub_cate1_lnb1_ov.png');}
-        #sub > section > aside > .lnb > li:nth-child(2) > a:hover {background-image: url('../images/sub_cate1_lnb2_ov.png');}
-        #sub > section > aside > .lnb > li:nth-child(1).on > a {background-image: url('../images/sub_cate1_lnb1_ov.png');}
-        #sub > section > aside > .lnb > li:nth-child(2).on > a {background-image: url('../images/sub_cate1_lnb2_ov.png');}
-
-        #sub > section > article {
-            float: left;
-            width: 800px;
-            min-height: 650px; /* 최소 크기 */
-        }
-
-        /* 팜스토리소개 */
-        
-        /* 장보기 */
-        /* 농작물이야기 */
-        /* 이벤트 */
-        /* 커뮤니티 */
-    </style>
 </head>
 <body>
     <div id="container">
@@ -102,7 +31,7 @@
             <div class="bg">
                 <img src="../images/sub_top_tit1.png" alt="INTRODUCTION">
             </div>
-            <section>
+            <section class="introduction">
                 <aside>
                     <img src="../images/sub_aside_cate1_tit.png" alt="팜스토리 소개">
                     <ol class="lnb">
@@ -110,7 +39,20 @@
                         <li><a href="#">찾아오시는길</a></li>
                     </ol>
                 </aside>
-                <article></article>
+                <article class="content">
+                    <nav>
+                        <img src="../images/sub_nav_tit_cate1_tit1.png" alt="인사말">
+                        <p>
+                            HOME > 팜스토리소개 > <strong>인사말</strong>
+                        </p>
+                    </nav>
+                    <!-- 컨텐츠 시작 -->
+                    <p>
+                        인사말 페이지 입니다.
+                    </p>
+
+                    <!-- 컨텐츠 끝 -->
+                </article>
             </section>
         </div>
 
