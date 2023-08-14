@@ -299,6 +299,8 @@ footer > p > .copyright {
 #sub > .introduction > aside > .lnb > li:nth-child(2).on > a {background-image: url('../images/sub_cate1_lnb2_ov.png');}
 
 /* 장보기 */
+#sub > .market > aside > .lnb > li:nth-child(1) > a {background-image: url('../images/sub_cate2_lnb1.png');}
+
 /* 농작물이야기 */
 #sub > .croptalk > aside > .lnb > li:nth-child(1) > a {background-image: url('../images/sub_cate3_lnb1.png');}
 #sub > .croptalk > aside > .lnb > li:nth-child(2) > a {background-image: url('../images/sub_cate3_lnb2.png');}
@@ -311,4 +313,7 @@ footer > p > .copyright {
 #sub > .croptalk > aside > .lnb > li:nth-child(3).on > a {background-image: url('../images/sub_cate3_lnb3_ov.png');}
 
 /* 이벤트 */
+#sub > .event > aside > .lnb > li:nth-child(1) > a {background-image: url('../images/sub_cate4_lnb1.png');}
+
 /* 커뮤니티 */
+#sub > .community > aside > .lnb > li:nth-child(1) > a {background-image: url('../images/sub_cate5_lnb1.png');}
