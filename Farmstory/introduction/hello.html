@@ -9,7 +9,6 @@
         #sub {
             width: 100%;
             height: auto;
-            border: 1px solid red;
         }
         #sub > .bg {
             position: relative;
@@ -25,22 +24,48 @@
         #sub > section {
             width: 100%;
             height: auto;
-            border: 1px solid blue;
             overflow: hidden;
         }
+        
         #sub > section > aside {
             float: left;
             width: 180px;
             height: 650px;
-            border: 1px solid green;
-            box-sizing: border-box;
+            background-image: url('../images/sub_aside_bg_line.png');
+            background-repeat: no-repeat;
+            background-position: right;
         }
+        #sub > section > aside > img {
+            margin: 16px;
+        }
+        #sub > section > aside > .lnb {
+            width: 175px;
+            height: 233px;
+            padding-top: 26px;
+            background-image: url('../images/sub_aside_bg_lnb.png');
+        }
+        #sub > section > aside > .lnb > li {
+            width: 100%;
+            height: 29px;
+            margin-bottom: 6px;
+        }
+        #sub > section > aside > .lnb > li > a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            font-size: 0;
+        }
+        #sub > section > aside > .lnb > li:nth-child(1) > a {background-image: url('../images/sub_cate1_lnb1.png');}
+        #sub > section > aside > .lnb > li:nth-child(2) > a {background-image: url('../images/sub_cate1_lnb2.png');}
+        #sub > section > aside > .lnb > li:nth-child(1) > a:hover {background-image: url('../images/sub_cate1_lnb1_ov.png');}
+        #sub > section > aside > .lnb > li:nth-child(2) > a:hover {background-image: url('../images/sub_cate1_lnb2_ov.png');}
+        #sub > section > aside > .lnb > li:nth-child(1).on > a {background-image: url('../images/sub_cate1_lnb1_ov.png');}
+        #sub > section > aside > .lnb > li:nth-child(2).on > a {background-image: url('../images/sub_cate1_lnb2_ov.png');}
+
         #sub > section > article {
             float: left;
             width: 800px;
             min-height: 650px; /* 최소 크기 */
-            border: 1px solid green;
-            box-sizing: border-box;
         }
 
         /* 팜스토리소개 */
@@ -78,7 +103,13 @@
                 <img src="../images/sub_top_tit1.png" alt="INTRODUCTION">
             </div>
             <section>
-                <aside></aside>
+                <aside>
+                    <img src="../images/sub_aside_cate1_tit.png" alt="팜스토리 소개">
+                    <ol class="lnb">
+                        <li class="on"><a href="#">인사말</a></li>
+                        <li><a href="#">찾아오시는길</a></li>
+                    </ol>
+                </aside>
                 <article></article>
             </section>
         </div>
