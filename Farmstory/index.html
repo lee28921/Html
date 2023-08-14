@@ -106,7 +106,6 @@
             position: relative;
             width: 100%;
             height: 100%;
-            border: 1px solid red;
             overflow: hidden;
         }
         main > .slider > .slides > li {
@@ -139,9 +138,57 @@
         main > .quick {
             height: 74px;
         }
+        main > .quick > a {
+            float: left;
+            display: block;
+            width: 50%;
+            height: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+        }
+        main > .quick > a:nth-child(1) {background-image: url('./images/main_banner_sub1_bg.jpg');}
+        main > .quick > a:nth-child(2) {background-image: url('./images/main_banner_sub2_bg.jpg');}
+
         main > .latest {
             height: 186px;
         }
+        main > .latest > article {
+            position: relative;
+            float: left;
+            width: 33.33%;
+            height: 100%;
+        }
+        main > .latest > article > a {
+            position: absolute;
+            left: 0;
+            top: 16px;
+        }
+        main > .latest > article > img {
+            position: absolute;
+            left: 0;
+            bottom: 10px;
+        }
+        main > .latest > article > table {
+            position: absolute;
+            right: 10px;
+            bottom: 9px;
+        }
+        main > .latest > article > table tr {}
+        main > .latest > article > table td {
+            color: #6a6a6a;
+            line-height: 18px;
+        }
+        main > .latest > article > table td > a {
+            color: #6a6a6a;
+        }
+        main > .latest > article > table td:nth-child(2) {
+            display: block;
+            width: 142px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
         main > .info {
             height: 154px;
         }
@@ -203,8 +250,105 @@
                     <img src="./images/main_banner_img.png" alt="이미지">
                 </div>
             </div>
-            <div class="quick"></div>
-            <div class="latest"></div>
+            <div class="quick">
+                <a href="#"><img src="./images/main_banner_sub1_tit.png" alt="오늘의 식단"></a>
+                <a href="#"><img src="./images/main_banner_sub2_tit.png" alt="나도 요리사"></a>
+            </div>
+            <div class="latest">
+                <article>
+                    <a href="#"><img src="./images/main_latest1_tit.png" alt="텃밭가꾸기"></a>
+                    <img src="./images/main_latest1_img.jpg" alt="이미지">
+                    <table border="0">
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>20-08-14</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
+                            <td>20-08-14</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
+                            <td>20-08-14</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
+                            <td>20-08-14</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td><a href="">토마토! 건강하게 길러서 안심하고 먹자</a></td>
+                            <td>20-08-14</td>
+                        </tr>
+                    </table>
+                </article>
+                <article>
+                    <a href="#"><img src="./images/main_latest2_tit.png" alt="텃밭가꾸기"></a>
+                    <img src="./images/main_latest2_img.jpg" alt="이미지">
+                    <table border="0">
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>20-08-14</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
+                            <td>20-08-14</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
+                            <td>20-08-14</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
+                            <td>20-08-14</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td><a href="">토마토! 건강하게 길러서 안심하고 먹자</a></td>
+                            <td>20-08-14</td>
+                        </tr>
+                    </table>
+                </article>
+                <article>
+                    <a href="#"><img src="./images/main_latest3_tit.png" alt="텃밭가꾸기"></a>
+                    <img src="./images/main_latest3_img.jpg" alt="이미지">
+                    <table border="0">
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>20-08-14</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
+                            <td>20-08-14</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
+                            <td>20-08-14</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
+                            <td>20-08-14</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td><a href="">토마토! 건강하게 길러서 안심하고 먹자</a></td>
+                            <td>20-08-14</td>
+                        </tr>
+                    </table>
+                </article>
+            </div>
             <div class="info"></div>
         </main>
         <footer>
